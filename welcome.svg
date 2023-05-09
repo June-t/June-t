@@ -1,0 +1,144 @@
+<svg fill="none" viewBox="0 0 600 400" width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          color: inherit;
+          text-decoration: none;
+          list-style: none;
+          outline: none;
+          box-sizing: border-box;
+        }
+
+        .body {
+          --color-main: #e0d8ce;
+          --color-primary: #d6ccc3;
+          --color-secondary: #b1a192;
+          --color-background: #0d1117;
+          --color-link: #fef29e;
+
+          height: 300px;
+          width: 100%;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Open Sans", sans-serif;
+
+          background-image: radial-gradient(var(--color-main), var(--color-primary), var(--color-secondary));
+          animation: border 5s linear infinite;
+          background-size: 200% 200%;
+          background-position: 0 0;
+          border: 24px solid;
+          border-color: var(--color-background);
+        }
+
+        .container>span {
+          font-style: italic;
+          font-size: 14px;
+          color: white;
+          text-transform: none;
+          animation: opacity 1s ease-in-out 0.5s backwards;
+        }
+
+        h1 {
+          display: flex;
+          flex-direction: column;
+          font-size: 50px;
+          text-transform: uppercase;
+          line-height: 1.1;
+        }
+
+        h1 span:nth-child(1) {
+          color: var(--color-main);
+          animation: animationText 1s ease-in-out 0.5s backwards;
+        }
+
+        h1 span:nth-child(2) {
+          color: var(--color-primary);
+          animation: animationText 1s ease-in-out 0.7s backwards;
+        }
+
+        h1 span:nth-child(3) {
+          color: var(--color-secondary);
+          animation: animationText 1s ease-in-out 0.8s backwards;
+        }
+
+        .container {
+          background: var(--color-background);
+          height: calc(100% - 10px);
+          width: calc(100% - 10px);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 2em;
+        }
+
+        @keyframes border {
+          0% {
+            background-position: 0 0;
+          }
+
+          20% {
+            background-position: 100% 0;
+          }
+
+          40% {
+            background-position: 100% 100%;
+          }
+
+          60% {
+            background-position: 0 100%;
+          }
+
+          100% {
+            background-position: 0 0;
+          }
+        }
+
+        @keyframes animationText {
+          from {
+            opacity: 0;
+            transform: translateY(30%);
+          }
+
+          to {
+            opacity: 1;
+            transform: translateY(0%);
+          }
+        }
+
+        @keyframes opacity {
+          from {
+            opacity: 0;
+          }
+
+          to {
+            opacity: 1;
+          }
+        }
+
+        @media (prefers-reduced-motion) {
+          .body {
+            animation: none;
+          }
+        }
+      </style>
+      <div class='body'>
+        <div class='container'>
+          <span>
+            I am a:
+          </span>
+          <h1>
+            <span>Front</span>
+            <span>End</span>
+            <span>Developer</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
