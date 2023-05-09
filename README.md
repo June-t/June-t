@@ -1,7 +1,6 @@
-### Hi there 👋
-
-<!--
-**June-t/June-t** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div style="width: 100%;">
+    <img src="welcome.svg" style="width: 100%;" alt="Click to see the source">
+</div>
 
 Here are some ideas to get you started:
 
@@ -13,4 +12,3 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
