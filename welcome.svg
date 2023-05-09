@@ -122,9 +122,9 @@
 
         @media (prefers-color-scheme: light) {
           .body {
-            --color-main: #BFBFBF;
+            --color-main: #333333;
             --color-primary: #808080;
-            --color-secondary: #333333;
+            --color-secondary: #BFBFBF;
             --color-background: #ffffff;
           }
         }
