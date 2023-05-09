@@ -53,17 +53,17 @@
 
         h1 span:nth-child(1) {
           color: var(--color-main);
-          animation: animationText 1s ease-in-out 0.5s backwards;
+          animation: animationText 1s ease-in-out 0.5s;
         }
 
         h1 span:nth-child(2) {
           color: var(--color-primary);
-          animation: animationText 1s ease-in-out 0.7s backwards;
+          animation: animationText 1s ease-in-out 0.7s;
         }
 
         h1 span:nth-child(3) {
           color: var(--color-secondary);
-          animation: animationText 1s ease-in-out 0.8s backwards;
+          animation: animationText 1s ease-in-out 0.8s;
         }
 
         .container {
