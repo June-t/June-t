@@ -40,7 +40,7 @@
           font-size: 14px;
           color: white;
           text-transform: none;
-          animation: opacity 1s ease-in-out 0.5s backwards;
+          animation: opacity 1s cubic-bezier(0.5, 0, 0.25, 1.3) 0.5s backwards;
         }
 
         h1 {
@@ -53,17 +53,17 @@
 
         h1 span:nth-child(1) {
           color: var(--color-main);
-          animation: animationText 1s ease-in-out 0.5s;
+          animation: animationText 1.5s cubic-bezier(0.5, 0, 0.25, 1.3) 1s backwards;
         }
 
         h1 span:nth-child(2) {
           color: var(--color-primary);
-          animation: animationText 1s ease-in-out 0.7s;
+          animation: animationText 1.5s cubic-bezier(0.5, 0, 0.25, 1.2) 0.9s backwards;
         }
 
         h1 span:nth-child(3) {
           color: var(--color-secondary);
-          animation: animationText 1s ease-in-out 0.8s;
+          animation: animationText 1.5s cubic-bezier(0.5, 0, 0.25, 1.1) 0.8s backwards;
         }
 
         .container {
@@ -123,6 +123,12 @@
 
         @media (prefers-reduced-motion) {
           .body {
+            animation: none;
+          }
+
+          h1 span:nth-child(1),
+          h1 span:nth-child(2),
+          h1 span:nth-child(3) {
             animation: none;
           }
         }
