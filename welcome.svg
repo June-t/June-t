@@ -128,7 +128,6 @@
             --color-background: #ffffff;
           }
         }
-        }
 
         @media (prefers-reduced-motion) {
           .body {
