@@ -130,9 +130,6 @@
         }
 
         @media (prefers-reduced-motion) {
-          .body {
-            animation: none;
-          }
 
           h1 span:nth-child(1),
           h1 span:nth-child(2),
