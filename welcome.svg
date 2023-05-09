@@ -121,13 +121,13 @@
         }
 
         @media (prefers-color-scheme: light) {
-          .body {
-            --color-main: #33333;
+        .body {
+            --color-main: #333333;
             --color-primary: #5b5b5b;
             --color-secondary: #909090;
             --color-background: #ffffff;
-          }
-        }
+      }
+       }
 
         @media (prefers-reduced-motion) {
 
