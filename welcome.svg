@@ -64,7 +64,7 @@
 
         h1 span:nth-child(1) {
           color: var(--color-main);
-          animation: animationText 1.5s cubic-bezier(0.5, 0, 0.25, 1.3) 1s backwards;
+          animation: animationText 1.5s cubic-bezier(0.5, 0, 0.25, 1.3) 0.8s backwards;
         }
 
         h1 span:nth-child(2) {
@@ -74,7 +74,7 @@
 
         h1 span:nth-child(3) {
           color: var(--color-secondary);
-          animation: animationText 1.5s cubic-bezier(0.5, 0, 0.25, 1.1) 0.8s backwards;
+          animation: animationText 1.5s cubic-bezier(0.5, 0, 0.25, 1.1) 1s backwards;
         }
 
         @keyframes border {
