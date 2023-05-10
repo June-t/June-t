@@ -44,6 +44,7 @@
           justify-content: center;
           align-items: flex-start;
           padding: 2em;
+          grid-gap: 1em;
         }
 
         .container>span {
@@ -57,9 +58,17 @@
         h1 {
           display: flex;
           flex-direction: column;
-          font-size: 50px;
+          font-size: 40px;
           text-transform: uppercase;
           line-height: 1.1;
+        }
+
+        h1::after {
+          content: '🔆';
+          position: absolute;
+          color: white;
+          right: 5rem;
+          animation: rotate 5s linear infinite;
         }
 
         h1 span:nth-child(1) {
@@ -111,6 +120,16 @@
           }
         }
 
+        @keyframes rotate {
+          from {
+            transform: rotate(0deg);
+          }
+
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
         @keyframes opacity {
           from {
             opacity: 0;
@@ -122,13 +141,13 @@
         }
 
         @media (prefers-color-scheme: light) {
-        .body {
+          .body {
             --color-main: #333333;
             --color-primary: #5b5b5b;
             --color-secondary: #909090;
             --color-background: #ffffff;
-      }
-       }
+          }
+        }
 
         @media (prefers-reduced-motion) {
 
@@ -146,8 +165,8 @@
           </span>
           <h1>
             <span>Front</span>
-            <span>End</span>
-            <span>Developer</span>
+            <span>End Developer</span>
+            <span>+ Amateur Designer</span>
           </h1>
         </div>
       </div>
